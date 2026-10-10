@@ -7,13 +7,7 @@
 <link rel="stylesheet" href="style.css">
 
 <!-- ===== ZEBO KUZATUV KODI (1-qism) SHU YERGA QO'YILADI ===== -->
-<script>
-  window.zeboq = window.zeboq || [];
-  zeboq.push(['purchase', {
-    order_id: ORDER_ID,
-    amount: ORDER_SUM
-  }]);
-</script>
+<script src="https://zeboshop.uz/t.js?b=c4af72d8-0a4b-4e35-a44b-1bddf44ee820" async></script>
 <!-- ========================================================== -->
 </head>
 <body>
@@ -36,7 +30,13 @@ document.getElementById('s').textContent = ORDER_SUM.toLocaleString('ru-RU');
 <!-- ===== ZEBO SOTUV KODI (2-qism) SHU YERGA QO'YILADI =====
      Zebo bergan kodda:  'BUYURTMA_RAQAMI'  o'rniga  ORDER_ID  yozing (qo'shtirnoqsiz),
                           BUYURTMA_SUMMASI   o'rniga  ORDER_SUM  yozing.            -->
-
+<script>
+  window.zeboq = window.zeboq || [];
+  zeboq.push(['purchase', {
+    order_id: ORDER_ID,
+    amount: ORDER_SUM
+  }]);
+</script>
 <!-- ======================================================== -->
 
 <script>
