@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rahmat — Bahor Moda</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- ===== ZEBO KUZATUV KODI (1-qism) SHU YERGA QO'YILADI ===== -->
+
+<!-- ========================================================== -->
+</head>
+<body>
+<div class="top">Toshkent bo'ylab yetkazib berish — 1 kunda</div>
+<header><a class="logo" href="index.html">BAHOR MODA</a><nav><a href="index.html">Katalog</a></nav></header>
+<main style="text-align:center"><h1>Rahmat! Buyurtmangiz qabul qilindi</h1>
+<p style="font-family:Arial,sans-serif;font-size:16px">Buyurtma raqami: <b id="o"></b><br>Summa: <b id="s"></b> so'm</p>
+<div class="note" id="zebo-holat" style="max-width:520px;margin:18px auto;text-align:left">Zebo kodi tekshirilmoqda…</div>
+<p><a href="index.html">← Katalogga qaytish</a></p></main>
+<footer>© Bahor Moda — Zebo uchun sinov sayti</footer>
+<script>
+// Buyurtma ma'lumotlari: haqiqiy saytda bularni sayt o'zi beradi
+var q = new URLSearchParams(location.search);
+var ORDER_ID = q.get('order') || '';
+var ORDER_SUM = Number(q.get('sum') || 0);
+document.getElementById('o').textContent = ORDER_ID;
+document.getElementById('s').textContent = ORDER_SUM.toLocaleString('ru-RU');
+</script>
+
+<!-- ===== ZEBO SOTUV KODI (2-qism) SHU YERGA QO'YILADI =====
+     Zebo bergan kodda:  'BUYURTMA_RAQAMI'  o'rniga  ORDER_ID  yozing (qo'shtirnoqsiz),
+                          BUYURTMA_SUMMASI   o'rniga  ORDER_SUM  yozing.            -->
+
+<!-- ======================================================== -->
+
+<script>
+// Faqat sinov uchun: Zebo kodi ishlayaptimi — sahifada ko'rsatadi
+setTimeout(function(){var el=document.getElementById('zebo-holat');
+  if(!window.zebo){el.textContent="✗ Zebo kuzatuv kodi (1-qism) topilmadi — <head> ichiga qo'yilmagan.";return;}
+  var c=window.zebo.cid&&window.zebo.cid();
+  el.textContent=c?'✓ Zebo kodi ishlayapti. Xaridor Zebo orqali kelgan (belgi: '+c+'). Sotuv Zebo\'ga yuborildi — agar 2-qism qo\'yilgan bo\'lsa.':"✓ Zebo kodi ishlayapti, lekin xaridor Zebo orqali kelmagan — bu xarid hech kimga hisoblanmaydi. Sinash uchun mahsulotga Zebo'dagi bloger postidan o'ting.";},1500);
+</script>
+</body></html>

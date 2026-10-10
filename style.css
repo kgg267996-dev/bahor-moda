@@ -1,0 +1,14 @@
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,'Times New Roman',serif;background:#FBF8F3;color:#1F1B19}a{color:inherit}
+.top{background:#1F1B19;color:#fff;text-align:center;font:13px/1 Arial,sans-serif;padding:10px;letter-spacing:.04em}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid #E8E1D6}
+header .logo{font-size:26px;font-weight:700;text-decoration:none;letter-spacing:.02em}header nav{font:14px Arial,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:24px 18px 60px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px}
+.card{text-decoration:none;background:#fff;border:1px solid #EEE7DC;border-radius:10px;overflow:hidden}.card img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover}.card div{padding:12px 14px;font-family:Arial,sans-serif}.card b{display:block;font-weight:600;margin-bottom:4px}
+.price{color:#8A5A2B;font-weight:700}
+.pp{display:grid;gap:28px}@media(min-width:760px){.pp{grid-template-columns:1fr 1fr}}.pp img{width:100%;border-radius:12px;display:block}
+.pp h1{margin:0 0 8px;font-size:30px}.pp p{font-family:Arial,sans-serif;line-height:1.6;color:#4A4440}
+form{font-family:Arial,sans-serif;display:grid;gap:10px;margin-top:18px}label{font-size:13px;color:#6F6862}input,select{width:100%;padding:11px 12px;border:1px solid #D9D0C3;border-radius:8px;font:inherit;font-size:15px;background:#fff}
+button{padding:14px;border:0;border-radius:8px;background:#1F1B19;color:#fff;font:600 15px Arial,sans-serif;cursor:pointer}
+.note{font:13px/1.5 Arial,sans-serif;background:#FFF6E5;border:1px solid #F0DDB5;border-radius:8px;padding:10px 12px;margin:14px 0}
+footer{border-top:1px solid #E8E1D6;padding:18px;text-align:center;font:13px Arial,sans-serif;color:#8C847C}
